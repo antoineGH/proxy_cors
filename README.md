@@ -37,7 +37,4 @@ npm start
 
 Then visit `localhost:3000/endpoint:slug`.
 
-```
-
 #### Enjoy!
-```
