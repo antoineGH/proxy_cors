@@ -27,5 +27,5 @@ app.get('/cityfalcon/:identifiers/:language/:token', (req, res) => {
 	)
 })
 
-const PORT = process.env.PORT || 443
+const PORT = process.env.PORT || 3000
 app.listen(PORT, () => console.log(`listening on ${PORT}`))
