@@ -24,7 +24,7 @@ Update the request URL
 ```
 request(
 		{
-			url: `https://sandbox-api.cityfalcon.com/v0.2/stories?identifier_type=assets&identifiers=${identifiers}&time_filter=mth1&categories=mp%2Cop&min_cityfalcon_score=0&order_by=top&languages=${language}&all_languages=false&access_token=${token}`,
+			url: 'https://sandbox-api.cityfalcon.com/v0.2/stories?identifier_type=assets&identifiers=${identifiers}&time_filter=mth1&categories=mp%2Cop&min_cityfalcon_score=0&order_by=top&languages=${language}&all_languages=false&access_token=${token}',
 		},
 ```
 
