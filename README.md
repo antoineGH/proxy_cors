@@ -21,7 +21,7 @@ app.get('/cityfalcon/:identifiers/:language/:token', (req, res) => {
 
 Update the request URL
 
-````
+```
 request(
 		{
 			url: `https://sandbox-api.cityfalcon.com/v0.2/stories?identifier_type=assets&identifiers=${identifiers}&time_filter=mth1&categories=mp%2Cop&min_cityfalcon_score=0&order_by=top&languages=${language}&all_languages=false&access_token=${token}`,
@@ -29,13 +29,15 @@ request(
 ```
 
 ### Run the server
-````
 
-npm install npm start
-
+```
+npm install
+npm start
 ```
 
 Then visit `localhost:3000/endpoint:slug`.
+
+```
 
 #### Enjoy!
 ```
