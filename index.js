@@ -46,5 +46,6 @@ app.get('/tickers/:tickers/:language/:token', (req, res) => {
 	)
 })
 
-const PORT = process.env.PORT || 80
+// const PORT = process.env.PORT || 80
+const PORT = process.env.PORT || 443
 app.listen(PORT, () => console.log(`listening on ${PORT}`))
