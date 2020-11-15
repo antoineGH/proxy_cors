@@ -15,7 +15,7 @@ app.get('/cityfalcon/:identifiers/:language/:token', (req, res) => {
 	const token = req.params.token
 	request(
 		{
-			url: `https://sandbox-api.cityfalcon.com/v0.2/stories?identifier_type=assets&identifiers=${identifiers}&time_filter=mth1&categories=mp%2Cop&min_cityfalcon_score=0&order_by=top&languages=${language}&all_languages=false&access_token=${token}`,
+			url: `https://sandbox-api.cityfalcon.com/v0.2/stories?identifier_type=assets&identifiers=${identifiers}&time_filter=mth1&categories=mp%2Cop&order_by=top&languages=${language}&all_languages=false&access_token=${token}`,
 		},
 		(error, response, body) => {
 			if (error || response.statusCode !== 200) {
@@ -34,7 +34,7 @@ app.get('/tickers/:tickers/:language/:token', (req, res) => {
 	const token = req.params.token
 	request(
 		{
-			url: `https://sandbox-api.cityfalcon.com/v0.2/stories?identifier_type=assets&identifiers=${tickers}&time_filter=mth1&categories=mp%2Cop&min_cityfalcon_score=0&order_by=top&languages=${language}&all_languages=false&access_token=${token}`,
+			url: `https://sandbox-api.cityfalcon.com/v0.2/stories?identifier_type=assets&identifiers=${tickers}&time_filter=mth1&categories=mp%2Cop&order_by=top&languages=${language}&all_languages=false&access_token=${token}`,
 		},
 		(error, response, body) => {
 			if (error || response.statusCode !== 200) {
